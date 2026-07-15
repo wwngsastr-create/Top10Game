@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Witcher 3</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Top 10 Games</h1>
+
+</header>
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+<section>
+
+<article class="game-detail">
+
+    <div class="gallery-container">
+
+        <img id="banner" src="img/The Witcher 3.jpg" alt="The Witcher 3" class="detail-banner">
+
+        <div class="thumbnail-container">
+
+            <img src="img/The Witcher 3.jpg" onclick="changeImage(0)">
+
+            <img src="img/The Witcher 31.jpg" onclick="changeImage(1)">
+
+            <img src="img/The Witcher 32.jpg" onclick="changeImage(2)">
+
+            <img src="img/The Witcher 33.jpg" onclick="changeImage(3)">
+
+        </div>
+
+    </div>
+
+    <div class="detail-info">
+
+        <h2>The Witcher 3: Wild Hunt</h2>
+
+        <p><strong>Genre:</strong> Action RPG</p>
+
+        <p><strong>Developer:</strong> CD Projekt Red</p>
+
+        <p><strong>Publisher:</strong> CD Projekt</p>
+
+        <p><strong>Release Date:</strong> May 19, 2015</p>
+
+        <p><strong>Platform:</strong> PC, PlayStation, Xbox, Nintendo Switch</p>
+
+        <p><strong>Price:</strong> $39.99</p>
+
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (10/10)</p>
+
+        <h3>Description</h3>
+
+        <div class="description">
+
+            <p>
+                The Witcher 3: Wild Hunt is a critically acclaimed
+                open-world action RPG developed by CD Projekt Red.
+                Play as Geralt of Rivia, a legendary monster hunter,
+                and journey through a vast fantasy world filled with
+                dangerous creatures, memorable characters,
+                and meaningful choices.
+            </p>
+
+        </div>
+
+        <a href="#" class="buy-btn">Buy Now</a>
+
+        <a href="index.html" class="back-btn">← Back to Home</a>
+
+    </div>
+
+</article>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-section">
+            <h3>🎮 Top 10 Games</h3>
+            <p>Discover the best games with rankings, reviews, and game information.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📧 Email: wwngsastr@email.com</p>
+            <p>📍 Thailand</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        &copy; 2026 Top 10 Games | All Rights Reserved.
+    </p>
+
+</footer>
+
+<script>
+
+const images = [
+
+    "img/The Witcher 3.jpg",
+    "img/The Witcher 31.jpg",
+    "img/The Witcher 32.jpg",
+    "img/The Witcher 33.jpg"
+
+];
+
+let current = 0;
+
+function changeImage(index){
+
+    current = index;
+
+    document.getElementById("banner").src = images[current];
+
+}
+
+setInterval(function(){
+
+    current++;
+
+    if(current >= images.length){
+
+        current = 0;
+
+    }
+
+    document.getElementById("banner").src = images[current];
+
+},5000);
+
+</script>
+
+</body>
+
+</html>

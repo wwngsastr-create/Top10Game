@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cyberpunk 2077</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Top 10 Games</h1>
+
+</header>
+
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+
+</nav>
+
+<section>
+
+<article class="game-detail">
+
+    <div class="gallery-container">
+
+        <img id="banner" src="img/Cyberpunk 2077.jpg" alt="Cyberpunk 2077" class="detail-banner">
+
+        <div class="thumbnail-container">
+
+            <img src="img/Cyberpunk 2077.jpg" onclick="changeImage(0)">
+
+            <img src="img/Cyberpunk 20771.jpg" onclick="changeImage(1)">
+
+            <img src="img/Cyberpunk 20772.jpg" onclick="changeImage(2)">
+
+            <img src="img/Cyberpunk 20773.jpg" onclick="changeImage(3)">
+
+        </div>
+
+    </div>
+
+    <div class="detail-info">
+
+        <h2>Cyberpunk 2077</h2>
+
+        <p><strong>Genre:</strong> Action RPG</p>
+
+        <p><strong>Developer:</strong> CD Projekt Red</p>
+
+        <p><strong>Publisher:</strong> CD Projekt</p>
+
+        <p><strong>Release Date:</strong> December 10, 2020</p>
+
+        <p><strong>Platform:</strong> PC, PlayStation 5, Xbox Series X/S</p>
+
+        <p><strong>Price:</strong> $59.99</p>
+
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ (9.5/10)</p>
+
+        <h3>Description</h3>
+
+        <div class="description">
+
+            <p>
+                Cyberpunk 2077 is an open-world action RPG set in the futuristic
+                metropolis of Night City. Play as V, a mercenary seeking fame,
+                fortune, and cybernetic enhancements while uncovering a gripping
+                story filled with memorable characters and high-tech combat.
+            </p>
+
+        </div>
+
+        <a href="#" class="buy-btn">Buy Now</a>
+
+        <a href="index.html" class="back-btn">← Back to Home</a>
+
+    </div>
+
+</article>
+
+</section>
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-section">
+            <h3>🎮 Top 10 Games</h3>
+            <p>Discover the best games with rankings, reviews, and game information.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="about.html">About</a></p>
+            <p><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>📧 Email: wwngsastr@email.com</p>
+            <p>📍 Thailand</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        &copy; 2026 Top 10 Games | All Rights Reserved.
+    </p>
+
+</footer>
+
+<script>
+
+const images = [
+
+    "img/Cyberpunk 2077.jpg",
+    "img/Cyberpunk 20771.jpg",
+    "img/Cyberpunk 20772.jpg",
+    "img/Cyberpunk 20773.jpg"
+
+];
+
+let current = 0;
+
+function changeImage(index){
+
+    current = index;
+
+    document.getElementById("banner").src = images[current];
+
+}
+
+setInterval(function(){
+
+    current++;
+
+    if(current >= images.length){
+
+        current = 0;
+
+    }
+
+    document.getElementById("banner").src = images[current];
+
+},5000);
+
+</script>
+
+</body>
+
+</html>
